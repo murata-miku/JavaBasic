@@ -53,7 +53,7 @@ public class PTra10_06 {
 				count++;
 				
 				if(run == -1) {
-					System.out.println(cars[i].color + "色の" +cars[i].serialNo +  "番"+  ":目的地に到達できませんでした");
+					System.out.println(cars[i].color + "色の" + cars[i].serialNo +  "番"+  ":目的地に到達できませんでした");
 					break;
 				}
 				
