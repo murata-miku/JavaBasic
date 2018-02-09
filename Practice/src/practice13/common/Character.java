@@ -31,7 +31,7 @@ public class Character {
 	 * @param defence
 	 */
 	public Character(int hp, int power, int endurance) {
-		this.hp = hp;
+		this.setHp(hp);
 		this.power = power;
 		this.endurance = endurance;
 	}
@@ -74,11 +74,13 @@ public class Character {
 		}
 
 		// ダメージ分体力を減らす
-		this.hp -= calc;
+		this.setHp(this.getHp() - calc);
+		
+		System.out.println(this.name + ":" + this.hp);
 
 		// 体力がなくなったかどうかの判定
-		if (this.hp <= 0) {
-			this.hp = 0;
+		if (this.getHp() <= 0) {
+			this.setHp(0);
 			return true;
 		}
 
@@ -94,12 +96,20 @@ public class Character {
 
 		str.append("名　前：" + this.name);
 		str.append("\n");
-		str.append("体　力：" + this.hp);
+		str.append("体　力：" + this.getHp());
 		str.append("\n");
 		str.append("　力　：" + this.power);
 		str.append("\n");
 		str.append("耐　久：" + this.endurance);
 
 		return str.toString();
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
 	}
 }
