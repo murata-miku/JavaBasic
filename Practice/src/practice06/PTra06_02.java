@@ -12,10 +12,9 @@ public class PTra06_02 {
 		// ★ 20回繰り返しを行うfor文を記述してください
 		//-----for start
 		for(int i = 0; i < 20 ; i++) {
-			if(i % 2 == 0) {
-				System.out.println("今" + i + "回目");
-			}
-			if(i % 2 == 1) {
+		System.out.println((i + 1) + "回目");
+			
+			if((i + 1) % 2 != 0) {
 				System.out.println("奇数");
 			}
 		}
