@@ -31,25 +31,29 @@ public class PTra13_04  {
 		 * 上記を繰り返し行います
 		 */
 
-		
+		boolean heroWin = true;
 		while(true) {
 			
 			if(	s.damage(h.attack()) ) {
-				System.out.println(h.getName() + "は" + s.getName() + "との戦闘に勝利した");
+				System.out.println(s.getName() + "は倒れた") ;
 				break;
 			}
 			
 			if(	h.damage(s.attack())) {
-				System.out.println(s.getName() + "は" + h.getName() + "との戦闘に勝利した");
+				System.out.println(h.getName() + "は倒れた") ;
+				heroWin = false;
 				break;
 			}
 			}
-		}
-		
-		
-
 		
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
+		if(heroWin ) {
+			System.out.println(h.getName() + "は" + s.getName() + "との戦闘に勝利した");
+		}	else {
+			System.out.println(s.getName() + "は" + h.getName() + "との戦闘に勝利した");
+		}
+		}
+
 
 	}
 
