@@ -47,8 +47,8 @@ public class PTra18_02 {
             	Player player = new Player();
                 String line = scanner.nextLine();
                 String[] list = line.split(",",0);
-                player.setPosition(list[0]);
-                player.setName(list[1]);
+                player.setPosition(list[1]);
+                player.setName(list[0]);
                 player.setCountry(list[2]);
                 player.setTeam(list[3]);
                 

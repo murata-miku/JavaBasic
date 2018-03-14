@@ -50,15 +50,12 @@ public class PTra10_05 {
 		 */
 		int sum = 0;
 		int count = 0;
-		int run = car.run();
+		
 		while(true) {
-			
+			int run = car.run();
 			sum += run;
 			count++;
-			
-			System.out.println(car.gasoline);
-			System.out.println(sum);
-			System.out.println(count);
+		
 			
 			if(run == -1) {
 				System.out.println("目的地に到達できませんでした");
@@ -66,7 +63,7 @@ public class PTra10_05 {
 			}
 			
 			if(sum >= distance) {
-				System.out.println("目的地までに" + count + "かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
+				System.out.println("目的地までに" + count + "回かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
 				break;
 			}
 			

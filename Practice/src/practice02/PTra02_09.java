@@ -16,12 +16,12 @@ public class PTra02_09 {
 
 		// ★ 変数quadrangleを出力してください
 
-		System.out.println(quadrangle);
+		System.out.println("四角形の面積:" + quadrangle);
 		// ★ 変数triangleに、三角形の面積を代入してください
 
 		int triangle = (length * height) / 2;
 		// ★ 変数triangleを出力してください
-		System.out.println(triangle);
+		System.out.println("三角形の面積:" + triangle);
 
 	}
 }

@@ -20,7 +20,7 @@ public class PTra13_01 extends Animal{
 		PTra13_01 ptra13_01 = new PTra13_01();
 
 		// ★ PTra13_01の持つsetterを実行してください（引数："人"）
-		ptra13_01.setName("太郎");
+		ptra13_01.setName("人");
 
 		// ★ PTra13_01の持つインスタンスメソッドrunとbreathを実行してしてください
 		ptra13_01.run();

@@ -19,5 +19,10 @@ public class PTra09_02 {
 		for(int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
 		}
+		
+		String[] arraylist = Util.shuffleArray(array);
+		for(String str : arraylist) {
+			System.out.println(str);
+		}
 	}
 }

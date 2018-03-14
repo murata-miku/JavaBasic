@@ -6,6 +6,8 @@ package practice10;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
+import java.util.Scanner;
+
 public class PTra10_06 {
 
 	/*
@@ -23,26 +25,24 @@ public class PTra10_06 {
 		Car[] cars = new Car[3];
 		final int distance = 300;
 		
-		Car car1 = new Car();
-		car1.serialNo = 1;
-		car1.color = "青";
-		car1.gasoline = 50;
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		
+
 		
-		Car car2 = new Car();
-		car2.serialNo = 2;
-		car2.color = "赤";
-		car2.gasoline = 20;
-		
-		Car car3 = new Car();
-		car3.serialNo = 3;
-		car3.color = "緑";
-		car3.gasoline = 100;
-		
-		
-		cars[0] = car1;
-		cars[1] = car2;
-		cars[2] = car3;
+		for(int i =0; i <cars.length; i++) {
+			System.out.println("本日のメインレースの車が登場します");
+			System.out.println("エントリーno" + (i + 1));
+			
+			System.out.println("\"シリアル№、車体カラー、ガソリン量をカンマ区切りで入力してください\"");
+			String line = scanner.nextLine();
+			String [] carlist = line.split(",",0);
+			
+			cars[i] = new Car();
+			cars[i].serialNo =Integer.parseInt(carlist[0]) ;
+			cars[i].color = carlist[1];
+			cars[i].gasoline = Integer.parseInt(carlist[2]);
+			
+		}
 		
 		for(int i =0; i < cars.length; i++) {
 			int sum = 0;

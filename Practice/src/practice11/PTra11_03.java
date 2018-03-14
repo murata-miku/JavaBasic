@@ -20,7 +20,7 @@ public class PTra11_03 {
 	 */
 	
 	PTra11_03(){
-		number++;
+		this.number++;
 	}
 
 	public static void main(String[] args) {

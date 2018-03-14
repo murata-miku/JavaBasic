@@ -9,7 +9,7 @@ package practice02;
 public class PTra02_03 {
 	public static void main(String[] args) {
 		int num1 = 50;
-		System.out.println(num1);
+	
 
 		// ★ 演算の評価の順番を変更して、num2に140が入るようにしてください(先に足し算が行われるよう変更)
 		int num2 = (20 + num1) * 2;

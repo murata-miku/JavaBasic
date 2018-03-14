@@ -23,10 +23,12 @@ public class PTra05_04 {
 		 */
 
 		// ①
-		while(true){
+		boolean loopFlg = true;
+		while(loopFlg){
 		System.out.println("0～6の整数を入力してください");
 
 		String line = scanner.nextLine();
+		loopFlg = false;
 
 		switch(line) {
 			case "0":
@@ -51,11 +53,12 @@ public class PTra05_04 {
 				System.out.println("土曜");
 				break;
 			default:
-				continue;
+				System.out.println("正しい値を入力してください");
+				loopFlg = true;
 				
 		}
-		System.out.println("システムを終了します");
-		break;
-		}	
+		
 	}
+}
+	
 }
